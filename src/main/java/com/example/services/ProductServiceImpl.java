@@ -44,4 +44,9 @@ public class ProductServiceImpl implements ProductService{
         productDao.delete(product);
     }
 
+    @Override
+    public List<Product> findAll() {
+        return productDao.findAll();
+    }
+
 }

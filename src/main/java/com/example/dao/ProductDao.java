@@ -12,6 +12,7 @@ import com.example.entities.Product;
 
 public interface ProductDao extends JpaRepository<Product, Integer> {
 
+    //Method personalized to bring the presentation 
     @Query(value = "select p from Product p left join fetch p.presentation",
     countQuery = "select count(p) from Product p left join p.presentation")
     public Page<Product> findAll(Pageable pageable);

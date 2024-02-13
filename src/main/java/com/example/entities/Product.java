@@ -2,6 +2,8 @@ package com.example.entities;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -35,6 +37,9 @@ public class Product implements Serializable {
     private double price;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     private Presentation presentation;
 
+
+    
 }
