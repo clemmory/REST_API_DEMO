@@ -28,8 +28,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.entities.Product;
-import com.example.helpers.FileUploadResponse;
 import com.example.helpers.FileUploadUtil;
+import com.example.model.FileUploadResponse;
 import com.example.services.ProductService;
 
 import jakarta.validation.Valid;

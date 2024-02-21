@@ -7,5 +7,7 @@ import com.example.entities.Presentation;
 
 @Repository
 public interface PresentationDao extends JpaRepository<Presentation, Integer> {
+   
+
 
 }
