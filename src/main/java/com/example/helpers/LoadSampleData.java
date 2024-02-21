@@ -57,7 +57,7 @@ public class LoadSampleData {
                 .build());
 
             productService.save(Product.builder()
-                .name("Desk Cahir")
+                .name("Desk Chair")
                 .description("desk chair on wheels")
                 .stock(15)
                 .price(99.99)

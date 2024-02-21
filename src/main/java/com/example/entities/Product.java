@@ -51,6 +51,8 @@ public class Product implements Serializable {
     @Min(value=0, message="El precio no puede ser negativo")
     private double price;
 
+    private String image;
+
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Presentation presentation;
