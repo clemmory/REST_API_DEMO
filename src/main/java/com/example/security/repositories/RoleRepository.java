@@ -1,13 +1,13 @@
-package com.example.security;
+package com.example.security.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.security.entities.Role;
-import java.util.List;
+import java.util.Optional;
 
 
 public interface RoleRepository extends JpaRepository<Role, Integer> {
 
-    List<Role> findByRole(String role);
+    Optional<Role> findByRole(String role);
 
 }
