@@ -217,7 +217,7 @@ public class ProductController {
     public ResponseEntity<Map<String, Object>> deleteProductById(
             @PathVariable(name = "id", required = true) Integer idProduct) {
 
-        Map<String, Object> responseAsMap = new HashMap();
+        Map<String, Object> responseAsMap = new HashMap<>();
         ResponseEntity<Map<String, Object>> responseEntity = null;
 
         try {
